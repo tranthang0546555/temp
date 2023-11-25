@@ -1,0 +1,226 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x76335403Cf928a127ba61361723e175C940b24D6",
+    "txHash": "0x7a9772062437a972d2df6d962777980fbe9698e124e162654a9155732600e9df"
+  },
+  "proxies": [
+    {
+      "address": "0x96Be97aCb5e029233E22A02830B0aB513812D301",
+      "txHash": "0x6519da4b522eeb752d22ba0edabfaf846de1c1bf829a30e306b302f9859f5f41",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "0962ea5ecd56c83b86e49f29ebf263ee5b3eadf5a96971db2445e976aa4ab856": {
+      "address": "0x656Eca1125E062F3a6826fa5fFaEcE9a5438ca1F",
+      "txHash": "0x9439204bfc44049c30dfc6f07dad0070ceb96b29efa7434bf8fe2f456ccac249",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "medicalRecords",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_struct(Record)36_storage)dyn_storage",
+            "contract": "MedicalRecord",
+            "src": "contracts\\MedicalRecord.sol:20"
+          },
+          {
+            "label": "recordToOwner",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "MedicalRecord",
+            "src": "contracts\\MedicalRecord.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Record)36_storage)dyn_storage": {
+            "label": "struct MedicalRecord.Record[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Record)36_storage": {
+            "label": "struct MedicalRecord.Record",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "walletId",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "data",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "isDeleted",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "userId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "doctorId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "38fbeabc5357156537e967a0789946aed43b2dc148dd4ff87bd67789bfc405ba": {
+      "address": "0xDC748067b0E518C537FA2e8D2719579e8319Ef23",
+      "txHash": "0x9db7fcec369a839573c42b054aa11b9b948e1630094080f56ea67484238f52f8",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "medicalRecords",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_struct(Record)435_storage)dyn_storage",
+            "contract": "MedicalRecordV2",
+            "src": "contracts\\MedicalRecordV2.sol:20"
+          },
+          {
+            "label": "recordToOwner",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "MedicalRecordV2",
+            "src": "contracts\\MedicalRecordV2.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Record)435_storage)dyn_storage": {
+            "label": "struct MedicalRecordV2.Record[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Record)435_storage": {
+            "label": "struct MedicalRecordV2.Record",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "walletId",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "data",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "isDeleted",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "userId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "doctorId",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "updatedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              }
+            ],
+            "numberOfBytes": "256"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
